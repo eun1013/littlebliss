@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "label": "new",
+    "title": "Knit Comfort Shorts",
+    "price": 20000,
+    "imageDefault": "/images/all/img(1).webp",
+    "imageHover": "/images/all/img(2).webp",
+    "alt" : "갈색 반팔 아기 옷"
+    
+  },
+  {
+    "id": 2,
+    "label": "new",
+    "title": "Knit Comfort Shorts",
+    "price": 20000,
+    "imageDefault": "/images/all/img(3).webp",
+    "imageHover": "/images/all/img(4).webp",
+    "alt" : "초록색 니트 아기 옷"
+  },
+  {
+    "id": 3,
+    "label": "new",
+    "title": "Knit Comfort Shorts",
+    "price": 20000,
+    "imageDefault": "/images/all/img(5).webp",
+    "imageHover": "/images/all/img(6).webp",
+    "alt" : "베이지색 긴팔 아기 옷"
+  },
+  {
+    "id": 4,
+    "label": "new",
+    "title": "Knit Comfort Shorts",
+    "price": 20000,
+    "imageDefault": "/images/all/img(7).webp",
+    "imageHover": "/images/all/img(8).webp",
+    "alt" : "분홍색 긴발 아기 옷"
+  }
+]

@@ -1,0 +1,153 @@
+.New {
+  width: 100%;
+  padding: 0 16px;
+
+  .category-new {
+    @include flex-layout(row, left, center);
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .new-icon {
+      svg {
+        color: var(--point);
+        font-size: 3rem;
+      }
+    }
+
+    .new-name {
+      @include font-h5;
+
+    }
+
+    .new-ment {
+      @include font-h7;
+    }
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
+
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-item {
+      height: 100%;
+
+      .product-container {
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        .product-img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          transition: transform 0.1s ease;
+
+          @include desktop {
+            height: 500px;
+          }
+        }
+
+        .default-img {
+          z-index: 1;
+        }
+
+        .hover-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          z-index: 2;
+          transition: opacity 0.5s ease-in-out;
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+
+      .product-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: 58px;
+        height: 35px;
+        line-height: 1.8;
+        opacity: 0.8;
+        background-color: var(--gray-50);
+        @include caption1;
+        z-index: 3;
+
+        @include tablet {
+          width: 70px;
+          height: 40px;
+          text-align: center;
+          line-height: 1.6;
+          @include font-h4;
+        }
+
+        @include desktop {
+          width: 70px;
+          height: 40px;
+          text-align: center;
+          line-height: 1.6;
+          @include font-h4;
+        }
+      }
+    }
+
+    .product {
+      @include flex-layout(row, left, center);
+
+      .product-info {
+        width: 80%;
+        padding: 1rem 0;
+
+        .product-title {
+          width: 70%;
+          padding-bottom: 0.9rem;
+          word-break: keep-all;
+          @include body-s;
+
+          @include desktop {
+            width: 50%;
+            @include body-l;
+            padding-bottom: 1rem;
+          }
+        }
+
+        .product-price {
+          @include body-s;
+
+          @include desktop {
+            @include body-l;
+          }
+        }
+      }
+
+      .btn-wrap {
+        .btn-add {
+          @include btn-cart;
+          margin: 0.5rem 0;
+        }
+
+        .btn-buy {
+          @include btn-buy;
+        }
+      }
+    }
+  }
+}

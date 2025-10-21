@@ -1,0 +1,44 @@
+.Menu{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 52.5%;
+  background-color: var(--gray-white);
+  color: var(--primary-700);
+  .toggle-menu{
+    height: 45px;
+    background-color: var(--primary-50);
+    @include flex-layout(row, space-between, center );
+    .none{
+      width: 53px;
+    }
+    .btn-close{
+      padding: 0 18px;
+      font-size: 2.5rem;
+      background-color: var(--primary-50);
+    }
+    .menu-logo{
+      font-family: 'Hakgyoansim Mabeopsa',sans-serif;
+      font-size: 2rem;
+      font-weight: normal;
+      padding-right: 7px;
+    }
+  }
+  .menu-list{
+    padding: 0 3rem;
+    li{
+      text-align: center;
+      @include font-h6;
+      padding: 14px 0;
+      border-bottom: 1px dashed var(--primary-400);
+      cursor: pointer;
+      &:hover{
+        scale: 1.1;
+        transition: all 0.5s ease;
+        background-color: var(--primary-400);
+        color: var(--gray-white);
+      }
+    }
+  }
+}

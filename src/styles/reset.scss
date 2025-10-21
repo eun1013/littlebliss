@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    list-style: none;
+    color: inherit;
+    display: block;
+}
+li{
+    list-style: none;
+}
+button{
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+// 통일
+button,input,label{
+  display: block;
+  font-size: inherit;
+  color: inherit;
+}

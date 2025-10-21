@@ -1,0 +1,79 @@
+.menu-category {
+  display: none;
+
+  @include desktop {
+    width: 100%;
+    padding: 5rem 0;
+    display: block;
+    @include flex-layout();
+    gap: 7rem;
+    @include font-h4;
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.1;
+        color: var(--primary-700);
+      }
+    }
+  }
+  .active{
+    color: var(--primary-700);
+  }
+}
+
+
+.Banner {
+  width: 100%;
+  height: 100%;
+  padding: 38px 16px;
+  @include flex-layout(row, space-between, center);
+
+  .banner-slider {
+    width: 70%;
+
+    .banner-container {
+      width: 100%;
+      border-top-right-radius: 40px;
+
+      .banner-poster {
+        width: 95%;
+        height: 200px;
+        object-fit: cover;
+        border-top-right-radius: 40px;
+
+        @include tablet {
+          width: 95%;
+          height: 300px;
+          object-fit: cover;
+          border-top-right-radius: 6.5rem;
+        }
+
+        @include desktop {
+          width: 95%;
+          height: 580px;
+          object-fit: cover;
+          border-top-right-radius: 11rem;
+        }
+      }
+    }
+  }
+}
+
+.sale-poster {
+  width: 30%;
+  height: 200px;
+
+  @include tablet {
+    width: 30%;
+    height: 300px;
+    object-fit: fill;
+  }
+
+  @include desktop {
+    width: 40%;
+    height: 580px;
+    object-fit: cover;
+  }
+}

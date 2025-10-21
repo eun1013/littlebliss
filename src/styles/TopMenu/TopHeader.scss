@@ -1,0 +1,78 @@
+.top-header {
+  width: 100%;
+  height: 45px;
+  padding: 0px 16px;
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+  @include flex-layout(row, space-between, center);
+
+  @include tablet {
+    height: 52px;
+  }
+
+  @include desktop {
+    height: 200px;
+    display: flex;
+  }
+
+  .logo {
+    font-family: 'Hakgyoansim Mabeopsa', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+
+    @include desktop {
+      font-size: 4rem;
+    }
+  }
+
+  .menu-btn {
+    .btn-home {
+      display: none;
+
+      @include desktop {
+        display: block;
+        font-size: 4rem;
+        background-color: var(--primary-50);
+        padding-right: 40px;
+      }
+    }
+
+    .btn-menu {
+      font-size: 2.5rem;
+      background-color: var(--primary-50);
+      padding-right: 23px; // 로고 중심 맞추기
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  .user-icons {
+    @include flex-layout;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+
+    .btn-user {
+      font-size: 2.5rem;
+      background-color: var(--primary-50);
+
+      @include desktop {
+        font-size: 4rem;
+        background-color: var(--primary-50);
+      }
+    }
+
+    .btn-cart {
+      font-size: 2.5rem;
+      padding-bottom: 2px;
+      background-color: var(--primary-50);
+
+      @include desktop {
+        font-size: 4.08rem;
+        background-color: var(--primary-50);
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
