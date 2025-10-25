@@ -82,6 +82,12 @@ const App = () => {
     ));
   };
 
+  //주문 후 장바구니 비우기
+  const handleClearCart = ()=>{
+    setCart([]);
+    localStorage.removeItem('cart');
+  }
+
   return (
     <BrowserRouter>
       <TopMenu />
@@ -94,7 +100,7 @@ const App = () => {
           <Route path="/Bottom" element={<Bottom handleAddToCart={handleAddToCart} />} />
           <Route path="/Romper" element={<Romper handleAddToCart={handleAddToCart} />} />
           <Route path="/Sale" element={<SaleList handleAddToCart={handleAddToCart} />} />
-          <Route path="/Cart" element={<Cart cart={cart} onDelete={handleDelete} onUpdate={handleUpdate} />} />
+          <Route path="/Cart" element={<Cart cart={cart} onDelete={handleDelete} onUpdate={handleUpdate}  onClearCart={handleClearCart}/>} />
         </Routes>
       </div>
     </BrowserRouter>

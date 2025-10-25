@@ -2,13 +2,15 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdDelete } from "react-icons/md";
 import Popup from '../Popup';
+import Popup2 from '../Popup2';
 
-const Cart = ({ cart, onDelete, onUpdate }) => {
+const Cart = ({ cart, onDelete, onUpdate, onClearCart }) => {
   const navigate = useNavigate('');
   const [hoveredle, setHoveredle] = useState(null);
   const [checkedItems, setCheckedItems] = useState([]);
   const [selectAll, setSelectAll] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
+  const [showPopup2, setShowPopup2] = useState(false);
 
   //체크박스 선택 처리
   const handleCheck = (itemId) => {
@@ -56,6 +58,12 @@ const Cart = ({ cart, onDelete, onUpdate }) => {
     return sum + (item.price * item.count);
   }, 0);
 
+  const handleBtnClick = ()=>{
+    onClearCart();
+    setShowPopup(false);
+    setShowPopup2(true);
+  }
+
   return (
     <div className='cart'>
       <h1 className="cart-title">MY CART</h1>
@@ -90,12 +98,14 @@ const Cart = ({ cart, onDelete, onUpdate }) => {
                   />
                   <div className="cart-img-container">
                     <img
+                      loading="lazy"
                       src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
                       alt={item.alt}
                       className="cart-img default-img"
                     />
                     {item.imageHover && (
                       <img
+                        loading="lazy"
                         src={`${process.env.PUBLIC_URL}${item.imageHover}`}
                         alt={item.alt}
                         className={`cart-img hover-img ${hoveredle === itemId ? 'active' : ''}`}
@@ -190,10 +200,16 @@ const Cart = ({ cart, onDelete, onUpdate }) => {
         {showPopup && (
         <Popup
           mainText="상품을 주문하시겠어요?"
+          subText="주문이 완료되면 장바구니가 비워집니다."
           handleBtnClick={() => setShowPopup(false)}
-          handleConfirmClick={()=>navigate("/")}
+          handleConfirmClick={handleBtnClick}
         />
       )}
+              {showPopup2 && (
+        <Popup2
+        mainText="Little Bliss 아이템 주문이 완료되었어요!💖"
+        handleConfirmClick={()=>setShowPopup2(false)}
+        />)}
     </div>
   );
 };

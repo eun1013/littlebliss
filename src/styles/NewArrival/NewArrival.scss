@@ -18,6 +18,14 @@
       display: none;
     }
   }
+  .sort-options{
+    width: 100%;
+    text-align: right;
+    padding: 1rem 0;
+    .sort-select{
+    height: 3rem;
+    }
+  }
 
   .newarrival-list {
     display: grid;

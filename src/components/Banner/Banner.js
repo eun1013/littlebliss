@@ -36,6 +36,7 @@ const Banner = () => {
             key={idx}>
               <img
               className='banner-poster'
+              loading="lazy"
               src={imgSrc}
               alt={`리틀 블리스 배너 이미지 ${idx + 1}`}
               />
@@ -45,7 +46,7 @@ const Banner = () => {
         </Slider>
       </div>
       <img
-        className='sale-poster' 
+        className='sale-poster' loading="lazy"
         src={`${process.env.PUBLIC_URL}/images/Banner/banner04.webp`} alt="가을 세일 포스터 이미지"/>
     </div>
   );

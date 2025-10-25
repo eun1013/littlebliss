@@ -55,11 +55,13 @@ const Best = () => {
               >
                 <div className="best-container">
                   <img
+                    loading="lazy"
                     src={item.imageDefault}
                     alt={item.alt}
                     className="best-img default-img"
                   />
                   <img
+                    loading="lazy"
                     src={item.imageHover}
                     alt={item.alt}
                     className={`best-img hover-img ${hoveredle === item.id ? 'active' : ''}`}

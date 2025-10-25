@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# 프로젝트 개요
+## 프로젝트 이름 : Little Bliss
+## 프로젝트 기간 : 10/19 ~ 10/25
+## 참여인원 : 개인프로젝트
+## 작업 방식 : Little Bliss 브랜드 컨셉 기반의 기획부터 Figma를 활용한 UI/UX 디자인, 그리고 React와 SCSS를 활용한 프론트엔드 개발까지 전 과정을 단독으로 수행했습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 설명
+### 1. 레이아웃
+Little Bliss의 레이아웃은 따뜻하고 부드러운 브랜드 컨셉을 기반으로, 모든 디바이스에서 최적화된 
+사용자 경험을 제공하는 반응형 디자인으로 구현되었습니다. 직관적인 상품 탐색과 편리한 구매 과정을 위해 
+이미지 중심의 모던한 UI로 설계되었습니다.
 
-## Available Scripts
+### 2. 색상 사용
+Little Bliss는 따뜻하고 부드러운 아기 의류 브랜드 감성을 위해 신중하게 색상 팔레트를 구성했습니다. 
+주황(Primary) 계열로 따뜻함과 활력을, 녹색(Secondary) 계열로 편안함을 더했습니다. 
+SCSS 변수(--primary, --secondary, --point, --gray 스케일)를 활용하여 체계적인 컬러 시스템을 구축, 
+일관된 디자인과 뛰어난 가독성을 통해 브랜드 아이덴티티와 사용자 경험을 동시에 높였습니다
 
-In the project directory, you can run:
+### 3. UI 디자인 방식
+Little Bliss의 UI 디자인은 따뜻하고 부드러운 감성을 살리면서도 사용자 편의를 최우선으로 진행했습니다. 
+모바일 중심 반응형 구조로 메뉴부터 장바구니까지 직관적인 탐색이 가능하고, 이미지와 버튼을 적절히 배치해 시각적 집중도를 높였습니다. 브랜드 주황색 포인트로 주요 요소를 강조하고, 깔끔한 폰트와 여백으로 정돈된 
+느낌을 주어 사용자 경험을 극대화했습니다. 팝업, 체크박스 등 상호작용 요소도 심플하고 기능적으로 구현해 편리함을 더 한 디자인 방식입니다.
 
-### `npm start`
+### 4. 반응형 웹 지원
+- Little Bliss는 모바일 중심의 반응형 웹 디자인을 구현했습니다.
+- CSS 미디어 쿼리를 활용해 화면 크기에 따라 레이아웃과 이미지를 유연하게 조절했습니다.
+- 스마트폰, 태블릿, 데스크톱 등 어떤 기기에서도 최적의 사용자 경험을 제공합니다.
+- 이미지 크기와 배치, 폰트 크기 등을 디바이스에 맞게 세심하게 조정했습니다.
+이를 통해 어디서나 편안하고 직관적인 쇼핑이 가능하도록 설계했습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 5. 제작에 사용된 스킬 및 툴
+- 프론트엔드 개발 : HTML5, CSS3(SCSS 포함), JavaScript, React.js
+- 이미지 출처 : FreePik
+- 버전 관리 : Git, GitHub
+- 디자인 : Figma(UI/UX 디자인 기획안)
+- 반응형 대응 : SCSS mixin을 통한 media query 관리(tablet, desktop)
+- 기타 : VS Code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 문제점 및 개선 계획
+### 1. 제작 사이트 문제점
+- 이미지 최적화의 한계 및 페이지 로딩 속도
+고품질 이미지가 중요한 쇼핑몰 특성상 WebP 변환 및 압축에도 불구하고, 품질 저하 없이 용량을 더 줄이는데는 한계가 있었습니다. 전체 이미지 양으로 인해 페이지 로딩 속도가 저하되는게 아쉬웠습니다. 
 
-### `npm test`
+### 2. 향후 개선 계획
+- Adaptive Images 전략: 디바이스 환경(해상도, 뷰포트 크기)에 따라 서버에서 자동으로 최적화된 크기의 이미지를 전달하는 방법을 도입하여 불필요한 이미지 다운로드를 줄일 것입니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

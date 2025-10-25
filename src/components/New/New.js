@@ -3,17 +3,20 @@ import { useState } from "react";
 import NewList from "../../assets/NewList.json";
 import { BsStars } from "react-icons/bs";
 import Popup from "../Popup";
+import Popup2 from "../Popup2";
 
 const New = ({ handleAddToCart }) => {
   const [hoveredle, setHoveredle] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [showPopup2, setShowPopup2] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
-  
+
   const handleItemAddToCart = () => {
     if (currentItem) {
       handleAddToCart(currentItem)
     }
     setShowPopup(false);
+    setShowPopup2(true);
   }
 
   return (
@@ -34,10 +37,12 @@ const New = ({ handleAddToCart }) => {
             >
               <div className="product-container">
                 <img
+                  loading="lazy"
                   src={item.imageDefault}
                   alt={item.alt}
                   className="product-img default-img" />
                 <img
+                  loading="lazy"
                   src={item.imageHover}
                   alt={item.alt}
                   className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
@@ -53,8 +58,9 @@ const New = ({ handleAddToCart }) => {
                   <button
                     className="btn-add"
                     onClick={() => {
-                    setCurrentItem(item)
-                      setShowPopup(true) }}
+                      setCurrentItem(item)
+                      setShowPopup(true)
+                    }}
                   >ADD TO CART +</button>
                   <button className="btn-buy">BUY NOW</button>
                 </div>
@@ -70,6 +76,11 @@ const New = ({ handleAddToCart }) => {
           handleConfirmClick={handleItemAddToCart}
         />
       )}
+      {showPopup2 && (
+        <Popup2
+          mainText="Little Bliss 아이템이 장바구니에 담겼어요!💖"
+          handleConfirmClick={() => setShowPopup2(false)}
+        />)}
     </div>
   );
 };

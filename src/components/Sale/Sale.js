@@ -2,18 +2,21 @@ import React, { useState } from 'react';
 import sale from "../../assets/Sale.json";
 import { MdDiscount } from "react-icons/md";
 import Popup from "../Popup";
+import Popup2 from "../Popup2";
 
 
 const Sale = ({ handleAddToCart }) => {
   const [hoveredle, setHoveredle] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [showPopup2, setShowPopup2] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
-  
+
   const handleItemAddToCart = () => {
     if (currentItem) {
       handleAddToCart(currentItem)
     }
     setShowPopup(false);
+    setShowPopup2(true);
   }
 
   return (
@@ -56,9 +59,10 @@ const Sale = ({ handleAddToCart }) => {
                 <div className="btn-wrap">
                   <button
                     className="btn-add"
-                    onClick={() => { 
+                    onClick={() => {
                       setCurrentItem(item)
-                      setShowPopup(true) }}
+                      setShowPopup(true)
+                    }}
                   >ADD TO CART +</button>
                   <button className="btn-buy">BUY NOW</button>
                 </div>
@@ -74,6 +78,11 @@ const Sale = ({ handleAddToCart }) => {
           handleConfirmClick={handleItemAddToCart}
         />
       )}
+      {showPopup2 && (
+        <Popup2
+          mainText="Little Bliss 아이템이 장바구니에 담겼어요!💖"
+          handleConfirmClick={() => setShowPopup2(false)}
+        />)}
     </div>
   );
 };
