@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 const Banner = () => {
 
   const bannerImages = [
-    `images/Banner/banner01.webp`, // 첫 번째 배너 이미지
-    `images/Banner/banner02.webp`, // 두 번째 배너 이미지
-    `images/Banner/banner03.webp`, // 세 번째 배너 이미지
+    `/images/Banner/banner01.webp`, // 첫 번째 배너 이미지
+    `/images/Banner/banner02.webp`, // 두 번째 배너 이미지
+    `/images/Banner/banner03.webp`, // 세 번째 배너 이미지
   ];
   const sliderSettings = {
     dots: true,           // 슬라이더 아래에 점(dot) 내비게이션 표시
@@ -37,7 +37,7 @@ const Banner = () => {
               <img
               className='banner-poster'
               loading="lazy"
-              src={`${process.env.PUBLIC_URL}${imgSrc}`}
+              src={process.env.PUBLIC_URL + imgSrc}
               alt={`리틀 블리스 배너 이미지 ${idx + 1}`}
               />
             </div>

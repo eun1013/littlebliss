@@ -13,9 +13,9 @@ const Best = () => {
     dots: false,
     infinite: false,
     speed: 500, // 슬라이드 전환 속도 (밀리초)
-    slidesToShow: 1, // 기본적으로 모바일에서는 1개 보여주기
+    slidesToShow: 1, //모바일에서는 1개 보여주기
     slidesToScroll: 1, // 한 번에 1개씩 넘기기
-    arrows: true, // 좌우 화살표 버튼 표시 (원하면 false로 변경 가능)
+    arrows: true, // 좌우 화살표 버튼 표시
 
     responsive: [
       {
@@ -28,8 +28,8 @@ const Best = () => {
       {
         breakpoint: 9999, // 768px 이상일 때
         settings:{
-        slidesToShow: 2, // 2개 보여주기!
-        slidesToScroll: 2, // 한 번에 2개씩 넘기기!
+        slidesToShow: 2, // 2개 보여주기
+        slidesToScroll: 2, // 한 번에 2개씩 넘기기
         }
       }
     ]
@@ -56,13 +56,13 @@ const Best = () => {
                 <div className="best-container">
                   <img
                     loading="lazy"
-                    src={item.imageDefault}
+                    src={process.env.PUBLIC_URL + item.imageDefault}
                     alt={item.alt}
                     className="best-img default-img"
                   />
                   <img
                     loading="lazy"
-                    src={item.imageHover}
+                    src={process.env.PUBLIC_URL + item.imageHover}
                     alt={item.alt}
                     className={`best-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                   />
