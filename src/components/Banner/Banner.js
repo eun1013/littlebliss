@@ -1,22 +1,10 @@
-import React, { useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { useNavigate } from 'react-router-dom';
+
 
 
 const Banner = () => {
-  const [activeCategory, setActiveCategory] = useState('');
-  const navigate = useNavigate('');
-
-  const categories = [
-    { name: 'NEW ARRIVAL', path: '/new-arrival' },
-    { name: 'OUTER', path: '/outer' },
-    { name: 'TOP', path: '/top' },
-    { name: 'BOTTOM', path: '/bottom' },
-    { name: 'ROMPER', path: '/romper' },
-    { name: 'SALE', path: '/sale' },
-  ]
 
   const bannerImages = [
     `${process.env.PUBLIC_URL}/images/Banner/banner01.webp`, // 첫 번째 배너 이미지
@@ -35,28 +23,7 @@ const Banner = () => {
     arrows: false
   };
   
-  const handleClick = (category)=>{
-    setActiveCategory(category.name);
-    navigate(category.path);
-  }
-
   return (
-    <>
-      <ul className='menu-category'>
-        {
-          categories.map((category)=>{
-            return (
-              <li 
-              key={category.name}
-              className={activeCategory === category.name ? 'active':''}
-              onClick={()=>{handleClick(category)}}
-              >
-                {category.name}
-              </li>
-            )
-          })
-        }
-      </ul>
     <div className='Banner'>
       <div className='banner-slider'>
         <Slider
@@ -81,7 +48,6 @@ const Banner = () => {
         className='sale-poster' 
         src={`${process.env.PUBLIC_URL}/images/Banner/banner04.webp`} alt="가을 세일 포스터 이미지"/>
     </div>
-    </>
   );
 };
 

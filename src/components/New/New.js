@@ -4,9 +4,17 @@ import NewList from "../../assets/NewList.json";
 import { BsStars } from "react-icons/bs";
 import Popup from "../Popup";
 
-const New = () => {
+const New = ({ handleAddToCart }) => {
   const [hoveredle, setHoveredle] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [currentItem, setCurrentItem] = useState(null);
+  
+  const handleItemAddToCart = () => {
+    if (currentItem) {
+      handleAddToCart(currentItem)
+    }
+    setShowPopup(false);
+  }
 
   return (
     <div className="New">
@@ -25,41 +33,43 @@ const New = () => {
               onMouseLeave={() => { setHoveredle(null) }}
             >
               <div className="product-container">
-                <img 
+                <img
                   src={item.imageDefault}
                   alt={item.alt}
                   className="product-img default-img" />
-                  <img
+                <img
                   src={item.imageHover}
                   alt={item.alt}
-                  className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`} 
-                  />
+                  className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
+                />
                 {item.label && <span className="product-label">{item.label}</span>}
               </div>
               <div className="product">
-              <div className="product-info">
-                <h3 className="product-title">{item.title}</h3>
-                <p className="product-price">￦{item.price.toLocaleString()}원</p>
-              </div>
-              <div className="btn-wrap">
-              <button 
-              className="btn-add"
-              onClick={()=>{setShowPopup(true)}}
-              >ADD TO CART +</button>
-              <button className="btn-buy">BUY NOW</button>
-              </div>
+                <div className="product-info">
+                  <h3 className="product-title">{item.title}</h3>
+                  <p className="product-price">￦{item.price.toLocaleString()}원</p>
+                </div>
+                <div className="btn-wrap">
+                  <button
+                    className="btn-add"
+                    onClick={() => {
+                    setCurrentItem(item)
+                      setShowPopup(true) }}
+                  >ADD TO CART +</button>
+                  <button className="btn-buy">BUY NOW</button>
+                </div>
               </div>
             </li>
           )
         })}
       </ul>
       {showPopup && (
-      <Popup 
-        mainText="이 상품을 장바구니에 담으시겠어요?" 
-        btnText="취소"
-        handleBtnClick={() => setShowPopup(false)}
-      />
-    )}
+        <Popup
+          mainText="이 상품을 장바구니에 담으시겠어요?"
+          handleBtnClick={() => setShowPopup(false)}
+          handleConfirmClick={handleItemAddToCart}
+        />
+      )}
     </div>
   );
 };

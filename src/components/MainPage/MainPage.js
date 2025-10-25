@@ -1,16 +1,20 @@
-import React from 'react';
 import Banner from '../Banner/Banner';
 import New from '../New/New';
-import Popup from '../Popup';
 import Best from '../Best/Best';
+import Video from '../Video/Video';
+import Sale from '../Sale/Sale';
+import Footer from '../Footer/Footer';
 
 
-const MainPage = () => {
+const MainPage = ({handleAddToCart}) => {
   return (
     <div>
       <Banner/>
-      <New/>
+      <New  handleAddToCart={handleAddToCart}/>
       <Best/>
+      <Video/>
+      <Sale  handleAddToCart={handleAddToCart}/>
+      <Footer/>
     </div>
   );
 };

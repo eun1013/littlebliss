@@ -1,0 +1,167 @@
+.Best-wrap {
+  width: 100%;
+  padding: 3rem 16px;
+  .category-new {
+    @include flex-layout(row, left, center);
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .new-icon {
+      svg {
+        color: var(--point);
+        font-size: 3rem;
+      }
+    }
+
+    .new-name {
+      @include font-h5;
+
+    }
+
+    .new-ment {
+      @include font-h7;
+    }
+  }
+}
+
+.best-slider-container {
+  position: relative; 
+  padding-bottom: 2rem;
+  .slick-prev, .slick-next {
+    z-index: 10; 
+    color: var(--gray-700);
+    
+    &:before {
+      color: var(--gray-700); 
+      font-size: 3rem;
+      opacity: 1; 
+    }
+    &.slick-prev {
+      top: 45%;
+      left: -25px; 
+    }
+    &.slick-next {
+      top: 45%;
+      right: -20px;
+    }
+  }
+  
+  .slick-next:before {
+    content: '〉';
+  }
+  
+  .slick-prev:before {
+    content: '〈';
+  }
+}
+
+
+  .best-products-slider {
+    .best-item-wrapper {
+      .best-container {
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        @include desktop {
+          width: 95%;
+        }
+
+        .best-img {
+          width: 100%;
+          height: 25rem;
+          object-fit: cover;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          transition: transform 0.1s ease;
+
+          @include tablet {
+            padding: 0 1rem;
+          }
+
+          @include desktop {
+            height: 45rem;
+          }
+        }
+
+        .default-img {
+          z-index: 1;
+
+          @include tablet {
+            padding: 0 1rem;
+          }
+        }
+
+        .hover-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          z-index: 2;
+          transition: opacity 0.5s ease-in-out;
+
+          &.active {
+            opacity: 1;
+          }
+
+
+        }
+      }
+    }
+
+    .best {
+      width: 95%;
+      margin: 0 auto;
+      @include flex-layout(row, space-between, center);
+
+      @include tablet {
+        padding: 0 1rem;
+      }
+
+      @include desktop {
+        width: 95.5%;
+        margin: 0 auto;
+      }
+
+      .best-info {
+        padding: 1rem 0;
+        @include desktop{
+          padding: 2rem 0;
+        }
+
+        .best-title {
+          @include body-m;
+          margin-bottom: 1rem;
+        }
+
+        .best-price {
+          @include body-m;
+        }
+      }
+    }
+
+    .best-btn-wrap {
+      width: 45%;
+
+      .btn-go {
+        width: 100%;
+        height: 5rem;
+        background-color: var(--gray-black);
+        color: var(--gray-white);
+        @include btn3;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: var(--primary-600);
+          color: var(--gray-white);
+        }
+
+        @include desktop {
+          @include btn2;
+        }
+      }
+    }
+  }

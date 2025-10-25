@@ -1,22 +1,28 @@
 // 반응형
-@mixin desktop{
-    @media screen and (min-width:1024px){
+@mixin desktop {
+    @media screen and (min-width:1024px) {
         @content;
     }
 }
-@mixin tablet { // 768px 이상, 1023px 이하는 태블릿 사이즈
+
+@mixin tablet {
+
+    // 768px 이상, 1023px 이하는 태블릿 사이즈
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         @content;
     }
 }
-@mixin mobile { // 767px 이하는 모바일
+
+@mixin mobile {
+
+    // 767px 이하는 모바일
     @media screen and (max-width: 767px) {
         @content;
     }
 }
 
 //플렉스
-@mixin flex-layout($direction:row, $justify:center, $alige:center){
+@mixin flex-layout($direction: row, $justify: center, $alige: center) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -26,164 +32,192 @@
 /** 폰트**/
 
 // 타이틀
-@mixin font-h1{
+@mixin font-h1 {
     font-size: 35px;
     font-weight: 700;
 }
-@mixin font-h2{
+
+@mixin font-h2 {
     font-size: 35px;
     font-weight: 500;
 }
-@mixin font-h3{
+
+@mixin font-h3 {
     font-size: 25px;
     font-weight: 600;
 }
-@mixin font-h4{
+
+@mixin font-h4 {
     font-size: 20px;
     font-weight: 600;
 }
-@mixin font-h5{
+
+@mixin font-h5 {
     font-size: 20px;
     font-weight: 700;
 }
-@mixin font-h6{
+
+@mixin font-h6 {
     font-size: 16px;
     font-weight: 600;
 }
-@mixin font-h7{
+
+@mixin font-h7 {
     font-size: 15px;
     font-weight: 500;
 }
 
 //본문
-@mixin body-xl{
+@mixin body-xl {
     font-size: 25px;
     font-weight: 400;
 }
-@mixin body-l{
+
+@mixin body-l {
     font-size: 20px;
     font-weight: 400;
 }
-@mixin body-m{
+
+@mixin body-m {
     font-size: 16px;
-    font-weight: 400; 
+    font-weight: 400;
 }
-@mixin body-s{
+
+@mixin body-s {
     font-size: 13px;
     font-weight: 400;
 }
 
 //캡션
-@mixin caption1{
+@mixin caption1 {
     font-size: 16px;
-    font-weight:5400;
+    font-weight: 5400;
 }
-@mixin caption2{
+
+@mixin caption2 {
     font-size: 10px;
     font-weight: 500;
 }
-@mixin caption3{
+
+@mixin caption3 {
     font-size: 9px;
     font-weight: 500;
 }
 
 //버튼 폰트
-@mixin btn1{
+@mixin btn1 {
     font-size: 20px;
     font-weight: 500;
 }
-@mixin btn2{
+
+@mixin btn2 {
     font-size: 16px;
     font-weight: 500;
 }
-@mixin btn3{
+
+@mixin btn3 {
     font-size: 13px;
     font-weight: 500;
 }
-@mixin btn4{
-    font-size: 7px;
+
+@mixin btn4 {
+    font-size: 9px;
     font-weight: 500;
 }
 
 /** 버튼 스타일 **/
-@mixin btn-cart{
-    width: 90px;
+@mixin btn-cart {
+    width: 100px;
     height: 28px;
     @include btn4();
-    background-color:var(--primary-600) ;
+    background-color: var(--primary-600);
     color: var(--font-white);
     border-radius: 20px;
-         &:hover{
+
+    &:hover {
         filter: brightness(80%);
-     }
-    @include desktop{
+    }
+
+    @include desktop {
         width: 150px;
         height: 45px;
         @include btn3();
     }
 }
-@mixin btn-buy{
-    width: 90px;
+
+@mixin btn-buy {
+    width: 100px;
     height: 28px;
     @include btn4();
-    background-color:var(--secondary-600) ;
+    background-color: var(--secondary-600);
     color: var(--font-white);
     border-radius: 20px;
-         &:hover{
+
+    &:hover {
         filter: brightness(80%);
-     }
-        @include desktop{
+    }
+
+    @include desktop {
         width: 150px;
         height: 45px;
         @include btn3();
     }
-}    
-@mixin btn-best{
+}
+
+@mixin btn-best {
     width: 131px;
     height: 37px;
     @include btn3();
-    background-color:var(--font-black) ;
+    background-color: var(--font-black);
     color: var(--font-white);
     border-radius: 10px;
-         &:hover{
+
+    &:hover {
         background-color: var(--gray-white);
         color: var(--font-black);
         border: 1px solid var(--gray-400);
-     }
-        @include desktop{
+    }
+
+    @include desktop {
         width: 254px;
         height: 72px;
         @include btn1();
     }
 }
-@mixin btn-all{
-    width: 361px;
-    height: 67px;
-    @include btn1();
-    background-color:var(--primary-700) ;
+
+@mixin btn-all {
+    width: 90%;
+    height: 60px;
+    @include btn2();
+    background-color: var(--primary-700);
     color: var(--font-white);
     border-radius: 20px;
-         &:hover{
+
+    &:hover {
         filter: brightness(80%);
-     }
-        @include desktop{
+    }
+
+    @include desktop {
         width: 337px;
         height: 67px;
         @include btn1();
     }
 }
-@mixin btn-pick{
-    width: 361px;
-    height: 67px;
-    @include btn1();
-    background-color:var(--gray-white) ;
+
+@mixin btn-pick {
+    width: 90%;
+    height: 60px;
+    @include btn2();
+    background-color: var(--gray-white);
     color: var(--primary-700);
     border: 1px solid var(--gray-400);
     border-radius: 20px;
-     &:hover{
+
+    &:hover {
         filter: brightness(80%);
-     }
-        @include desktop{
+    }
+
+    @include desktop {
         width: 337px;
         height: 67px;
         @include btn1();

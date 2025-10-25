@@ -1,0 +1,52 @@
+[
+  {
+    "id": 32,
+    "label": "new",
+    "title": "Ivory Button Knit Cardigan",
+    "price": 33000,
+    "imageDefault": "/images/all/img(39).webp",
+    "imageHover": "/images/all/img(40).webp",
+    "alt": "아이보리 단추 니트 가디건"
+  },
+  {
+    "id": 33,
+    "title": "Ivory Waterproof Outer",
+    "price": 20000,
+    "imageDefault": "/images/all/img(41).webp",
+    "imageHover": "/images/all/img(42).webp",
+    "alt": "아이보리 방수 아우터"
+  },
+  {
+    "id": 34,
+    "title": "Brown Button Hat Cardigan",
+    "price": 48000,
+    "imageDefault": "/images/all/img(43).webp",
+    "imageHover": "/images/all/img(44).webp",
+    "alt": "브라운 단추 모자 가디건"
+  },
+  {
+    "id": 35,
+    "title": "Cloud Pattern Knit Cardigan",
+    "price": 35000,
+    "imageDefault": "/images/all/img(45).webp",
+    "imageHover": "/images/all/img(46).webp",
+    "alt": "구름 니트 가디건"
+  },
+  {
+    "id": 36,
+    "title": "Brown Fleece Outer",
+    "price": 70000,
+    "imageDefault": "/images/all/img(47).webp",
+    "imageHover": "/images/all/img(48).webp",
+    "alt": "브라운 양털 아우터"
+  },
+  {
+    "id": 37,
+    "label": "new",
+    "title": "Green Knit Cardigan",
+    "price": 32000,
+    "imageDefault": "/images/all/img(3).webp",
+    "imageHover": "/images/all/img(4).webp",
+    "alt": "그린 니트 가디건"
+  }
+]

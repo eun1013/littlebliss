@@ -1,0 +1,27 @@
+.footer{
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  padding: 3rem 0;
+  @include flex-layout(column);
+  background-color: var(--gray-300);
+  gap: 2rem;
+  @include caption2;
+  @include desktop{
+    @include caption1;
+    gap: 3rem;
+  }
+  .footer-icon{
+    @include flex-layout();
+    gap: 1rem;
+    font-size: 3rem;
+
+  }
+  .footer-info{
+    @include flex-layout();
+    gap: 3rem;
+  }
+  .info-5{
+    padding-bottom: 1rem;
+  }
+}
