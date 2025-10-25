@@ -4,8 +4,8 @@
     "title": "Scarlet Knit Bodysuit",
     "price": 55000,
     "sale": 25,
-    "imageDefault": "/images/all/img(17).webp",
-    "imageHover": "/images/all/img(18).webp",
+    "imageDefault": "/images/all/img17.webp",
+    "imageHover": "/images/all/img18.webp",
     "alt": "다홍색 니트 바디수트"
   },
   {
@@ -13,8 +13,8 @@
     "title": "Tri-Color Cotton Bodysuit",
     "price": 25000,
     "sale": 40,
-    "imageDefault": "/images/all/img(19).webp",
-    "imageHover": "/images/all/img(20).webp",
+    "imageDefault": "/images/all/img19.webp",
+    "imageHover": "/images/all/img20.webp",
     "alt": "삼색 면 바디수트"
   },
   {
@@ -22,8 +22,8 @@
     "title": "Pink Knit Overalls",
     "price": 42000,
     "sale": 70,
-    "imageDefault": "/images/all/img(21).webp",
-    "imageHover": "/images/all/img(22).webp",
+    "imageDefault": "/images/all/img21.webp",
+    "imageHover": "/images/all/img22.webp",
     "alt": "핑크 니트 멜빵"
   },
   {
@@ -31,8 +31,8 @@
     "title": "Mint Frill Bodysuit",
     "price": 25000,
     "sale": 58,
-    "imageDefault": "/images/all/img(23).webp",
-    "imageHover": "/images/all/img(24).webp",
+    "imageDefault": "/images/all/img23.webp",
+    "imageHover": "/images/all/img24.webp",
     "alt": "민트 프릴 바디수트"
   },
   {
@@ -40,8 +40,8 @@
     "title": "Yellow Striped Knit Overalls",
     "price": 38000,
     "sale": 25,
-    "imageDefault": "/images/all/img(25).webp",
-    "imageHover": "/images/all/img(26).webp",
+    "imageDefault": "/images/all/img25.webp",
+    "imageHover": "/images/all/img26.webp",
     "alt": "노란색 줄무늬 니트 멜빵"
   },
   {
@@ -49,8 +49,8 @@
     "title": "Ivory Frill Sleeveless Bodysuit",
     "price": 18000,
     "sale": 35,
-    "imageDefault": "/images/all/img(27).webp",
-    "imageHover": "/images/all/img(28).webp",
+    "imageDefault": "/images/all/img27.webp",
+    "imageHover": "/images/all/img28.webp",
     "alt": "아이보리 프릴 나시 바디수트"
   },
   {
@@ -58,8 +58,8 @@
     "title": "Brown Cable Knit Bodysuit",
     "price": 18000,
     "sale": 20,
-    "imageDefault": "/images/all/img(29).webp",
-    "imageHover": "/images/all/img(30).webp",
+    "imageDefault": "/images/all/img29.webp",
+    "imageHover": "/images/all/img30.webp",
     "alt": "브라운 꽈배기 니트 바디수트"
   },
   {
@@ -67,8 +67,8 @@
     "title": "Green Button Bodysuit",
     "price": 32000,
     "sale": 60,
-    "imageDefault": "/images/all/img(31).webp",
-    "imageHover": "/images/all/img(32).webp",
+    "imageDefault": "/images/all/img31.webp",
+    "imageHover": "/images/all/img32.webp",
     "alt": "초록색 단추 바디수트"
   }
 ]

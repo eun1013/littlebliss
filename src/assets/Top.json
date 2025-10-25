@@ -4,8 +4,8 @@
     "label": "new",
     "title": "Brown Long-Sleeve Bodysuit",
     "price": 25000,
-    "imageDefault": "/images/all/img(1).webp",
-    "imageHover": "/images/all/img(2).webp",
+    "imageDefault": "/images/all/img1.webp",
+    "imageHover": "/images/all/img2.webp",
     "alt": "브라운 색 긴팔 아기 바디수트"
   },
   {
@@ -13,8 +13,8 @@
     "label": "new",
     "title": "Ivory Knit Top",
     "price": 37000,
-    "imageDefault": "/images/all/img(35).webp",
-    "imageHover": "/images/all/img(36).webp",
+    "imageDefault": "/images/all/img35.webp",
+    "imageHover": "/images/all/img36.webp",
     "alt": "아이보리 니트 상의"
   },
   {
@@ -22,32 +22,32 @@
     "label": "new",
     "title": "Ivory Bobble Knit",
     "price": 43000,
-    "imageDefault": "/images/all/img(50).webp",
-    "imageHover": "/images/all/img(49).webp",
+    "imageDefault": "/images/all/img50.webp",
+    "imageHover": "/images/all/img49.webp",
     "alt": "아이보리 방울 니트"
   },
   {
     "id": 59,
     "title": "Brown Mock Neck Knit",
     "price": 28000,
-    "imageDefault": "/images/all/img(52).webp",
-    "imageHover": "/images/all/img(51).webp",
+    "imageDefault": "/images/all/img52.webp",
+    "imageHover": "/images/all/img51.webp",
     "alt": "브라운 반목 니트"
   },
   {
     "id": 60,
     "title": "Ivory Hooded Button Knit",
     "price": 18000,
-    "imageDefault": "/images/all/img(53).webp",
-    "imageHover": "/images/all/img(54).webp",
+    "imageDefault": "/images/all/img53.webp",
+    "imageHover": "/images/all/img54.webp",
     "alt": "아이보리 모자 버튼 니트"
   },
   {
     "id": 61,
     "title": "Multi-Color Bobble Knit",
     "price": 30000,
-    "imageDefault": "/images/all/img(55).webp",
-    "imageHover": "/images/all/img(56).webp",
+    "imageDefault": "/images/all/img55.webp",
+    "imageHover": "/images/all/img56.webp",
     "alt": "세가지 색 방울 긴팔 니트"
   }
 ]

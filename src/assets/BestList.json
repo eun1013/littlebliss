@@ -3,32 +3,32 @@
     "id": 1,
     "title": "Soft Knit Dot Pants Set",
     "price": 65000,
-    "imageDefault": "/images/all/img(9).webp",
-    "imageHover": "/images/all/img(10).webp",
+    "imageDefault": "/images/all/img9.webp",
+    "imageHover": "/images/all/img10.webp",
     "alt": "부드러운 흰색 니트 땡땡이 바지 아기 옷"
   },
   {
     "id": 2,
     "title": "Angel Lace Dress",
     "price": 55000,
-    "imageDefault": "/images/all/img(11).webp",
-    "imageHover": "/images/all/img(12).webp",
+    "imageDefault": "/images/all/img11.webp",
+    "imageHover": "/images/all/img12.webp",
     "alt": "천사 같은 순백의 레이스 아기 원피스"
   },
   {
     "id": 3,
     "title": "Soft Ivory Cotton Bodysuit",
     "price": 32000,
-    "imageDefault": "/images/all/img(14).webp",
-    "imageHover": "/images/all/img(13).webp",
+    "imageDefault": "/images/all/img14.webp",
+    "imageHover": "/images/all/img13.webp",
     "alt": "부드러운 아이보리 면 바디수트"
   },
   {
     "id": 4,
     "title": "Blossom Bodysuit",
     "price": 60000,
-    "imageDefault": "/images/all/img(16).webp",
-    "imageHover": "/images/all/img(15).webp",
+    "imageDefault": "/images/all/img16.webp",
+    "imageHover": "/images/all/img15.webp",
     "alt": "귀여운 꽃무늬 긴팔 아기 바디수트"
   }
 ]
