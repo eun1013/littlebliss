@@ -38,12 +38,12 @@ const New = ({ handleAddToCart }) => {
               <div className="product-container">
                 <img
                   loading="lazy"
-                  src={item.imageDefault}
+                  src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
                   alt={item.alt}
                   className="product-img default-img" />
                 <img
                   loading="lazy"
-                  src={item.imageHover}
+                  src={`${process.env.PUBLIC_URL}${item.imageHover}`}
                   alt={item.alt}
                   className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                 />

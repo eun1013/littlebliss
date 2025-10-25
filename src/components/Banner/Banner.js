@@ -37,7 +37,7 @@ const Banner = () => {
               <img
               className='banner-poster'
               loading="lazy"
-              src={process.env.PUBLIC_URL + imgSrc}
+              src={`${process.env.PUBLIC_URL}${imgSrc}`}
               alt={`리틀 블리스 배너 이미지 ${idx + 1}`}
               />
             </div>

@@ -91,7 +91,6 @@ const App = () => {
   return (
     <HashRouter>
       <TopMenu />
-      <div>
         <Routes>
           <Route path="/" element={<MainPage handleAddToCart={handleAddToCart} />} />
           <Route path="/NewArrival" element={<NewArrival handleAddToCart={handleAddToCart} />} />
@@ -102,7 +101,6 @@ const App = () => {
           <Route path="/Sale" element={<SaleList handleAddToCart={handleAddToCart} />} />
           <Route path="/Cart" element={<Cart cart={cart} onDelete={handleDelete} onUpdate={handleUpdate}  onClearCart={handleClearCart}/>} />
         </Routes>
-      </div>
     </HashRouter>
   );
 };

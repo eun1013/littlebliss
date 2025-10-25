@@ -56,13 +56,13 @@ const Best = () => {
                 <div className="best-container">
                   <img
                     loading="lazy"
-                    src={process.env.PUBLIC_URL + item.imageDefault}
+                    src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
                     alt={item.alt}
                     className="best-img default-img"
                   />
                   <img
                     loading="lazy"
-                    src={process.env.PUBLIC_URL + item.imageHover}
+                    src={`${process.env.PUBLIC_URL}${item.imageHover}`}
                     alt={item.alt}
                     className={`best-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                   />

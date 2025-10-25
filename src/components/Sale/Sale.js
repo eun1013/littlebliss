@@ -37,11 +37,11 @@ const Sale = ({ handleAddToCart }) => {
             >
               <div className="product-sale-container">
                 <img
-                  src={item.imageDefault}
+                  src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
                   alt={item.alt}
                   className="product-sale-img default-img" />
                 <img
-                  src={item.imageHover}
+                  src={`${process.env.PUBLIC_URL}${item.imageHover}`}
                   alt={item.alt}
                   className={`product-sale-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                 />
