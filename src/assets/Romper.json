@@ -4,8 +4,8 @@
     "label": "new",
     "title": "Brown Long-Sleeve Bodysuit",
     "price": 25000,
-    "imageDefault": "/images/all/img1.webp",
-    "imageHover": "/images/all/img2.webp",
+    "imageDefault": "images/all/img1.webp",
+    "imageHover": "images/all/img2.webp",
     "alt": "브라운 색 긴팔 아기 바디수트"
   },
   {
@@ -13,8 +13,8 @@
     "label": "new",
     "title": "Brown Short-Sleeve Bodysuit",
     "price": 15000,
-    "imageDefault": "/images/all/img5.webp",
-    "imageHover": "/images/all/img6.webp",
+    "imageDefault": "images/all/img5.webp",
+    "imageHover": "images/all/img6.webp",
     "alt": "브라운 반팔 아기 바디수트"
   },
   {
@@ -22,8 +22,8 @@
     "label": "new",
     "title": "Coral Bodysuit",
     "price": 28000,
-    "imageDefault": "/images/all/img7.webp",
-    "imageHover": "/images/all/img8.webp",
+    "imageDefault": "images/all/img7.webp",
+    "imageHover": "images/all/img8.webp",
     "alt": "코랄 여자 아기 바디수트"
   },
   {
@@ -31,32 +31,32 @@
     "label": "new",
     "title": "Blossom Bodysuit",
     "price": 60000,
-    "imageDefault": "/images/all/img15.webp",
-    "imageHover": "/images/all/img16.webp",
+    "imageDefault": "images/all/img15.webp",
+    "imageHover": "images/all/img16.webp",
     "alt": "귀여운 꽃무늬 긴팔 아기 바디슈트"
   },
   {
     "id": 48,
     "title": "Knit Polka Dot Bodysuit",
     "price": 38000,
-    "imageDefault": "/images/all/img65.webp",
-    "imageHover": "/images/all/img66.webp",
+    "imageDefault": "images/all/img65.webp",
+    "imageHover": "images/all/img66.webp",
     "alt": "니트 땡땡이 바디수트"
   },
   {
     "id": 49,
     "title": "Pink Frill Bodysuit",
     "price": 35000,
-    "imageDefault": "/images/all/img67.webp",
-    "imageHover": "/images/all/img68.webp",
+    "imageDefault": "images/all/img67.webp",
+    "imageHover": "images/all/img68.webp",
     "alt": "분홍색 프릴 바디수트"
   },
   {
     "id": 50,
     "title": "Pink Knit Frill Dress",
     "price": 42000,
-    "imageDefault": "/images/all/img69.webp",
-    "imageHover": "/images/all/img70.webp",
+    "imageDefault": "images/all/img69.webp",
+    "imageHover": "images/all/img70.webp",
     "alt": "분홍색 니트 프릴 원피스"
   }
 ]

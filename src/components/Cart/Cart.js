@@ -98,14 +98,14 @@ const Cart = ({ cart, onDelete, onUpdate, onClearCart }) => {
                   <div className="cart-img-container">
                     <img
                       loading="lazy"
-                      src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
+                      src={`${process.env.PUBLIC_URL}/${item.imageDefault}`}
                       alt={item.alt}
                       className="cart-img default-img"
                     />
                     {item.imageHover && (
                       <img
                         loading="lazy"
-                        src={`${process.env.PUBLIC_URL}${item.imageHover}`}
+                        src={`${process.env.PUBLIC_URL}/${item.imageHover}`}
                         alt={item.alt}
                         className={`cart-img hover-img ${hoveredle === itemId ? 'active' : ''}`}
                       />

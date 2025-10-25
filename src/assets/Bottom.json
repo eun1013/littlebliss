@@ -4,8 +4,8 @@
     "label": "new",
     "title": "Soft Knit Dot Pants Set",
     "price": 65000,
-    "imageDefault": "/images/all/img9.webp",
-    "imageHover": "/images/all/img10.webp",
+    "imageDefault": "images/all/img9.webp",
+    "imageHover": "images/all/img10.webp",
     "alt": "부드러운 흰색 니트 땡땡이 바지 아기 옷"
   },
   {
@@ -13,40 +13,40 @@
     "label": "new",
     "title": "Deep Brown Knit Set",
     "price": 63000,
-    "imageDefault": "/images/all/img37.webp",
-    "imageHover": "/images/all/img38.webp",
+    "imageDefault": "images/all/img37.webp",
+    "imageHover": "images/all/img38.webp",
     "alt": "짙은 브라운 니트 상,하의 세트"
   },
   {
     "id": 22,
     "title": "Brown Knit Shorts",
     "price": 18000,
-    "imageDefault": "/images/all/img57.webp",
-    "imageHover": "/images/all/img58.webp",
+    "imageDefault": "images/all/img57.webp",
+    "imageHover": "images/all/img58.webp",
     "alt": "브라운 니트 짧은 팬츠"
   },
   {
     "id": 23,
     "title": "Pink Polka Dot Leggings",
     "price": 22000,
-    "imageDefault": "/images/all/img59.webp",
-    "imageHover": "/images/all/img60.webp",
+    "imageDefault": "images/all/img59.webp",
+    "imageHover": "images/all/img60.webp",
     "alt": "분홍색 땡땡이 레깅스 바지"
   },
   {
     "id": 24,
     "title": "Brown Overalls",
     "price": 32000,
-    "imageDefault": "/images/all/img61.webp",
-    "imageHover": "/images/all/img62.webp",
+    "imageDefault": "images/all/img61.webp",
+    "imageHover": "images/all/img62.webp",
     "alt": "브라운 멜빵 바지"
   },
   {
     "id": 25,
     "title": "Mint Knit Shorts",
     "price": 17000,
-    "imageDefault": "/images/all/img63.webp",
-    "imageHover": "/images/all/img64.webp",
+    "imageDefault": "images/all/img63.webp",
+    "imageHover": "images/all/img64.webp",
     "alt": "민트 짧은 팬츠"
   }
 ]

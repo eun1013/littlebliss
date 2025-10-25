@@ -94,12 +94,12 @@ const Bottom = ({ handleAddToCart }) => {
               <div className="newarrival-container">
                 <img
                   loading="lazy"
-                  src={`${process.env.PUBLIC_URL}${item.imageDefault}`}
+                  src={`${process.env.PUBLIC_URL}/${item.imageDefault}`}
                   alt={item.alt}
                   className="product-img default-img" />
                 <img
                   loading="lazy"
-                  src={`${process.env.PUBLIC_URL}${item.imageHover}`}
+                  src={`${process.env.PUBLIC_URL}/${item.imageHover}`}
                   alt={item.alt}
                   className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                 />

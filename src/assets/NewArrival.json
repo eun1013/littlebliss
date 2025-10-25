@@ -4,8 +4,8 @@
     "label": "new",
     "title": "Brown Long-Sleeve Bodysuit",
     "price": 25000,
-    "imageDefault": "/images/all/img1.webp",
-    "imageHover": "/images/all/img2.webp",
+    "imageDefault": "images/all/img1.webp",
+    "imageHover": "images/all/img2.webp",
     "alt": "브라운 색 긴팔 아기 바디수트"
   },
   {
@@ -13,8 +13,8 @@
     "label": "new",
     "title": "Green Knit Cardigan",
     "price": 32000,
-    "imageDefault": "/images/all/img3.webp",
-    "imageHover": "/images/all/img4.webp",
+    "imageDefault": "images/all/img3.webp",
+    "imageHover": "images/all/img4.webp",
     "alt": "그린 니트 가디건"
   },
   {
@@ -22,8 +22,8 @@
     "label": "new",
     "title": "Brown Short-Sleeve Bodysuit",
     "price": 15000,
-    "imageDefault": "/images/all/img5.webp",
-    "imageHover": "/images/all/img6.webp",
+    "imageDefault": "images/all/img5.webp",
+    "imageHover": "images/all/img6.webp",
     "alt": "브라운 반팔 아기 바디수트"
   },
   {
@@ -31,8 +31,8 @@
     "label": "new",
     "title": "Coral Bodysuit",
     "price": 28000,
-    "imageDefault": "/images/all/img7.webp",
-    "imageHover": "/images/all/img8.webp",
+    "imageDefault": "images/all/img7.webp",
+    "imageHover": "images/all/img8.webp",
     "alt": "코랄 여자 아기 바디수트"
   },
   {
@@ -40,8 +40,8 @@
     "label": "new",
     "title": "Soft Knit Dot Pants Set",
     "price": 65000,
-    "imageDefault": "/images/all/img9.webp",
-    "imageHover": "/images/all/img10.webp",
+    "imageDefault": "images/all/img9.webp",
+    "imageHover": "images/all/img10.webp",
     "alt": "부드러운 흰색 니트 땡땡이 바지 아기 옷"
   },
   {
@@ -49,8 +49,8 @@
     "label": "new",
     "title": "Angelic Lace Dress",
     "price": 55000,
-    "imageDefault": "/images/all/img11.webp",
-    "imageHover": "/images/all/img12.webp",
+    "imageDefault": "images/all/img11.webp",
+    "imageHover": "images/all/img12.webp",
     "alt": "천사 같은 순백의 레이스 아기 원피스"
   },
   {
@@ -58,8 +58,8 @@
     "label": "new",
     "title": "Soft Ivory Cotton Bodysuit",
     "price": 32000,
-    "imageDefault": "/images/all/img13.webp",
-    "imageHover": "/images/all/img14.webp",
+    "imageDefault": "images/all/img13.webp",
+    "imageHover": "images/all/img14.webp",
     "alt": "부드러운 아이보리 면 바디수트"
   },
   {
@@ -67,8 +67,8 @@
     "label": "new",
     "title": "Blossom Bodysuit",
     "price": 60000,
-    "imageDefault": "/images/all/img15.webp",
-    "imageHover": "/images/all/img16.webp",
+    "imageDefault": "images/all/img15.webp",
+    "imageHover": "images/all/img16.webp",
     "alt": "귀여운 꽃무늬 긴팔 아기 바디수트"
   },
   {
@@ -76,8 +76,8 @@
     "label": "new",
     "title": "Ivory Knit Dress",
     "price": 37000,
-    "imageDefault": "/images/all/img33.webp",
-    "imageHover": "/images/all/img34.webp",
+    "imageDefault": "images/all/img33.webp",
+    "imageHover": "images/all/img34.webp",
     "alt": "아이보리 니트 원피스"
   },
   {
@@ -85,8 +85,8 @@
     "label": "new",
     "title": "Ivory Knit Top",
     "price": 37000,
-    "imageDefault": "/images/all/img35.webp",
-    "imageHover": "/images/all/img36.webp",
+    "imageDefault": "images/all/img35.webp",
+    "imageHover": "images/all/img36.webp",
     "alt": "아이보리 니트 상의"
   },
   {
@@ -94,8 +94,8 @@
     "label": "new",
     "title": "Deep Brown Knit Set",
     "price": 63000,
-    "imageDefault": "/images/all/img37.webp",
-    "imageHover": "/images/all/img38.webp",
+    "imageDefault": "images/all/img37.webp",
+    "imageHover": "images/all/img38.webp",
     "alt": "짙은 브라운 니트 상,하의 세트"
   },
   {
@@ -103,8 +103,8 @@
     "label": "new",
     "title": "Ivory Button Knit Cardigan",
     "price": 33000,
-    "imageDefault": "/images/all/img39.webp",
-    "imageHover": "/images/all/img40.webp",
+    "imageDefault": "images/all/img39.webp",
+    "imageHover": "images/all/img40.webp",
     "alt": "아이보리 단추 니트 가디건"
   }
 ]
