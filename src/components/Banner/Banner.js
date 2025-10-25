@@ -47,7 +47,7 @@ const Banner = () => {
       </div>
       <img
         className='sale-poster' loading="lazy"
-        src={`${process.env.PUBLIC_URL}/images/Banner/banner04.webp`} alt="가을 세일 포스터 이미지"/>
+        src={process.env.PUBLIC_URL + "/images/Banner/banner04.webp"} alt="가을 세일 포스터 이미지"/>
     </div>
   );
 };

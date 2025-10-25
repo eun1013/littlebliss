@@ -83,7 +83,6 @@ const Cart = ({ cart, onDelete, onUpdate, onClearCart }) => {
           <ul className='cart-list'>
             {cart.map((item) => {
               const itemId = item.id || item.product_id;
-
               return (
                 <li
                   className='cart-list-warp'
