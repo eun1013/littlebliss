@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/littlebliss/static/css/main.dfa478b3.css",
-    "main.js": "/littlebliss/static/js/main.a85de39b.js",
+    "main.js": "/littlebliss/static/js/main.fdc8c682.js",
     "static/media/slick.svg": "/littlebliss/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/littlebliss/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/Close.svg": "/littlebliss/static/media/Close.6c76180d9cdf988378291e1c1d42e511.svg",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/littlebliss/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/littlebliss/index.html",
     "main.dfa478b3.css.map": "/littlebliss/static/css/main.dfa478b3.css.map",
-    "main.a85de39b.js.map": "/littlebliss/static/js/main.a85de39b.js.map"
+    "main.fdc8c682.js.map": "/littlebliss/static/js/main.fdc8c682.js.map"
   },
   "entrypoints": [
     "static/css/main.dfa478b3.css",
-    "static/js/main.a85de39b.js"
+    "static/js/main.fdc8c682.js"
   ]
 }
