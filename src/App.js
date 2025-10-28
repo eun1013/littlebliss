@@ -10,6 +10,8 @@ import Romper from "./components/ItemList/Romper";
 import Cart from "./components/Cart/Cart";
 import { useEffect, useState } from "react";
 import SaleList from "./components/ItemList/SaleList";
+import ProductPage from "./components/ProductPage/ProductPage";
+import PopUp3 from "./components/Popup3";
 
 
 const App = () => {
@@ -100,6 +102,8 @@ const App = () => {
           <Route path="/Romper" element={<Romper handleAddToCart={handleAddToCart} />} />
           <Route path="/Sale" element={<SaleList handleAddToCart={handleAddToCart} />} />
           <Route path="/Cart" element={<Cart cart={cart} onDelete={handleDelete} onUpdate={handleUpdate}  onClearCart={handleClearCart}/>} />
+          <Route path="/productPage" element={<ProductPage cart={cart}/>}/>
+          <Route path="/popup3" element={<PopUp3/>}/>
         </Routes>
     </HashRouter>
   );

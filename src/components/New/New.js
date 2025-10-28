@@ -4,12 +4,14 @@ import NewList from "../../assets/NewList.json";
 import { BsStars } from "react-icons/bs";
 import Popup from "../Popup";
 import Popup2 from "../Popup2";
+import { useNavigate } from "react-router-dom";
 
 const New = ({ handleAddToCart }) => {
   const [hoveredle, setHoveredle] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const [showPopup2, setShowPopup2] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
+  const navigat = useNavigate('');
 
   const handleItemAddToCart = () => {
     if (currentItem) {
@@ -40,11 +42,14 @@ const New = ({ handleAddToCart }) => {
                   loading="lazy"
                   src={`${process.env.PUBLIC_URL}/${item.imageDefault}`}
                   alt={item.alt}
-                  className="product-img default-img" />
+                  className="product-img default-img"
+                  onClick={()=>{navigat('/productPage')}}
+                  />
                 <img
                   loading="lazy"
                   src={`${process.env.PUBLIC_URL}/${item.imageHover}`}
                   alt={item.alt}
+                  onClick={()=>{navigat('/productPage')}}
                   className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
                 />
                 {item.label && <span className="product-label">{item.label}</span>}

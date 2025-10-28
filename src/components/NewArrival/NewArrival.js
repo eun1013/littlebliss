@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import newarrival from "../../assets/NewArrival.json";
 import Popup from "../Popup";
 import Popup2 from "../Popup2";
+import { useNavigate } from "react-router-dom";
 
 
 const NewArrival = ({ handleAddToCart }) => {
@@ -12,6 +13,7 @@ const NewArrival = ({ handleAddToCart }) => {
   const [itemsPerPage, setItemPerPage] = useState(10);
   const [currentItem, setCurrentItem] = useState(null);
   const [option, setOption] = useState('신상품');
+  const navigate = useNavigate('');
 
   const handleItemAddToCart = () => {
     if (currentItem) {
@@ -93,12 +95,15 @@ const NewArrival = ({ handleAddToCart }) => {
                   loading="lazy"
                   src={`${process.env.PUBLIC_URL}/${item.imageDefault}`}
                   alt={item.alt}
-                  className="product-img default-img" />
+                  className="product-img default-img" 
+                  onClick={()=>{navigate('/productPage')}}
+                  />
                 <img
                   loading="lazy"
                   src={`${process.env.PUBLIC_URL}/${item.imageHover}`}
                   alt={item.alt}
                   className={`product-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
+                  onClick={()=>{navigate('/productPage')}}
                 />
                 {item.label && <span className="product-label">{item.label}</span>}
               </div>

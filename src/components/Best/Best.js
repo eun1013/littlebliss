@@ -3,11 +3,13 @@ import { RiStarSmileFill } from "react-icons/ri";
 import BestList from "../../assets/BestList.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick'; 
+import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 
 
 const Best = () => {
   const [hoveredle, setHoveredle] = useState(null);
+  const navigate = useNavigate('');
 
   const sliderSettings = {
     dots: false,
@@ -27,9 +29,9 @@ const Best = () => {
       },
       {
         breakpoint: 9999, // 768px 이상일 때
-        settings:{
-        slidesToShow: 2, // 2개 보여주기
-        slidesToScroll: 2, // 한 번에 2개씩 넘기기
+        settings: {
+          slidesToShow: 2, // 2개 보여주기
+          slidesToScroll: 2, // 한 번에 2개씩 넘기기
         }
       }
     ]
@@ -59,12 +61,14 @@ const Best = () => {
                     src={`${process.env.PUBLIC_URL}/${item.imageDefault}`}
                     alt={item.alt}
                     className="best-img default-img"
+                    onClick={() => { navigate('/productPage') }}
                   />
                   <img
                     loading="lazy"
                     src={`${process.env.PUBLIC_URL}/${item.imageHover}`}
                     alt={item.alt}
                     className={`best-img hover-img ${hoveredle === item.id ? 'active' : ''}`}
+                    onClick={() => { navigate('/productPage') }}
                   />
                 </div>
                 <div className="best">
