@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "https://eun1013.github.io/littlebliss/static/css/main.69445185.css",
-    "main.js": "https://eun1013.github.io/littlebliss/static/js/main.903458c3.js",
+    "main.css": "https://eun1013.github.io/littlebliss/static/css/main.a8198045.css",
+    "main.js": "https://eun1013.github.io/littlebliss/static/js/main.a8c32d0a.js",
     "static/media/slick.svg": "https://eun1013.github.io/littlebliss/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "https://eun1013.github.io/littlebliss/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/Close.svg": "https://eun1013.github.io/littlebliss/static/media/Close.6c76180d9cdf988378291e1c1d42e511.svg",
     "static/media/slick.ttf": "https://eun1013.github.io/littlebliss/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://eun1013.github.io/littlebliss/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://eun1013.github.io/littlebliss/index.html",
-    "main.69445185.css.map": "https://eun1013.github.io/littlebliss/static/css/main.69445185.css.map",
-    "main.903458c3.js.map": "https://eun1013.github.io/littlebliss/static/js/main.903458c3.js.map"
+    "main.a8198045.css.map": "https://eun1013.github.io/littlebliss/static/css/main.a8198045.css.map",
+    "main.a8c32d0a.js.map": "https://eun1013.github.io/littlebliss/static/js/main.a8c32d0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.69445185.css",
-    "static/js/main.903458c3.js"
+    "static/css/main.a8198045.css",
+    "static/js/main.a8c32d0a.js"
   ]
 }
