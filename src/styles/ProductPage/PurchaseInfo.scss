@@ -5,6 +5,14 @@
   @include caption2;
   word-break: keep-all;
   line-height: 1.5;
+  @include tablet{
+    @include body-s;
+  }
+  @include desktop{
+    width: 65%;
+    margin: 0 auto;
+    @include caption1;
+  }
   p{
     margin: 2rem 0;
     line-height: 2;

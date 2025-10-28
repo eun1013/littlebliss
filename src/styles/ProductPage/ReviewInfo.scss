@@ -2,6 +2,14 @@
   width: 100%;
   height: 100%;
   margin: 3rem 0;
+  @include tablet{
+    width: 70%;
+    margin: 4rem auto;
+  }
+  @include desktop{
+    width: 65%;
+    margin: 4rem auto;
+  }
   h1{
     text-align: center;
     padding: 0.5rem 0;
@@ -9,11 +17,23 @@
     span{
       color:var(--point);
     }
+      @include tablet{
+    @include body-l;
+  }
+  @include desktop{
+    @include body-l;
+  }
   }
   .review-img-wrap{
     padding: 1rem 0;
     @include flex-layout();
     gap: 2rem;
+    @include tablet{
+      padding: 2rem 0;
+    }
+    @include desktop{
+      padding: 2rem 0;
+    }
     .review-img{
       width: 140px;
       height: 140px;
@@ -23,6 +43,16 @@
       &:hover{
         filter: brightness(80%);
         scale: 1.1;
+      }
+      @include tablet{
+        width: 200px;
+        height: 200px;
+        margin: 0 1rem;
+      }
+      @include desktop{
+        width: 200px;
+        height: 200px;
+        margin: 0 1rem;
       }
     }
   }
@@ -86,12 +116,15 @@
     }
   }
   .review-btn{
-    width: 80%;
+    width: 30rem;
     height: 5rem;
     margin: 3rem auto;
     @include caption1;
     background-color: var(--gray-white);
     border: 1px solid var(--gray-500);
     border-radius: 10px;
+    &:hover{
+      filter: brightness(80%);
+    }
   }
 }

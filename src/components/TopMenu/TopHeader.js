@@ -13,6 +13,7 @@ const TopHeader = ({ isOpen, setIsOpen }) => {
 	const location = useLocation();
 
 	const isCartPage = location.pathname === '/Cart';
+	const isProductPage = location.pathname === '/productPage';
 
 	const categories = [
 		{ name: 'NEW ARRIVAL', path: '/NewArrival' },
@@ -36,12 +37,12 @@ const TopHeader = ({ isOpen, setIsOpen }) => {
 
   // 메뉴 상태 업데이트
   useEffect(() => {
-    if (isDesktop && !isCartPage) {
+    if (isDesktop && !isCartPage && !isProductPage) {
       setMenu(true);
-    } else if (isCartPage){
+    } else if (isCartPage || isProductPage){
 			setMenu(false);
 		}
-  }, [isDesktop,isCartPage]);
+  }, [isDesktop,isCartPage,isProductPage]);
 
 	const handleCategoryClick = (category) => {
 		setActiveCategory(category.name);
@@ -78,7 +79,7 @@ const TopHeader = ({ isOpen, setIsOpen }) => {
 						onClick={handleCartClick}><BsFillBagHeartFill /></button>
 				</div>
 			</div>
-			{menu && !isCartPage &&(
+			{menu && !isCartPage && !isProductPage && (
 				<ul className='menu-category'>
 					{categories.map((category) => (
 						<li

@@ -16,9 +16,11 @@ const PopUp3 = () => {
       onClick={()=>{navigate('/productPage')}}
       ><IoClose /></button>
       </div>
+      <div className='popup-img-wrap'>
       <img
         className='sizeGuide' loading="lazy"
         src={process.env.PUBLIC_URL + "/images/product/sizeGuide.webp"} alt="사이즈 가이드 표"/>
+      </div>
       </div>
     </div>
   );

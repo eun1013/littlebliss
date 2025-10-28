@@ -8,6 +8,7 @@
   background-color: var(--gray-white);
   z-index: 1000000000;
   overflow-y: scroll;
+  .popup3-wrap{
   .popup3-nav{
     padding: 2rem 0;
     @include flex-layout(row,space-between);
@@ -24,7 +25,14 @@
       }
     }
   }
+  .popup-img-wrap{
+    @include desktop{
+      width: 50%;
+      margin: 0 auto;
+    }
   .sizeGuide{
     width: 100%;
   }
+  }
+}
 }

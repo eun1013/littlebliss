@@ -27,13 +27,6 @@ const ProductPage = () => {
     <>
     <div className='product-page'>
       <div className='product-container'>
-        <div className='page-info01'>
-          <div className='info01-title'>
-            <h2 className='info01-name'>Brown Long-Sleeve Bodysuit</h2>
-            <p className='info01-price'>￦25,000원</p>
-          </div>
-          <p className='info01-label'>new</p>
-        </div>
         <div
           className='page-img-container'
           onMouseEnter={handleMouseEnter}
@@ -44,6 +37,14 @@ const ProductPage = () => {
             src={currentImg}
             alt="브라운색 긴팔 바디수트를 입고, 잠이 든 아기"
           />
+        </div>
+        <div className='page-info-wrap'>
+                <div className='page-info01'>
+          <div className='info01-title'>
+            <h2 className='info01-name'>Brown Long-Sleeve Bodysuit</h2>
+            <p className='info01-price'>￦25,000원</p>
+          </div>
+          <p className='info01-label'>new</p>
         </div>
         <div className='page-info02'>
           <div className='info02'>
@@ -83,6 +84,7 @@ const ProductPage = () => {
             <button className='productPage-btn-icon'><IoMdHeart /></button>
             <button className='productPage-btn-go'>구매하기</button>
           </div>
+        </div>
         </div>
       </div>
 <div className='detail-btn-wrap'>
